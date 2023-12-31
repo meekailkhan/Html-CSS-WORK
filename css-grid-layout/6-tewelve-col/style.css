@@ -1,0 +1,88 @@
+
+body {
+    margin: 0;
+    font-family: "Poppins";
+    background: #f5f5f5;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+  
+  header {
+    padding: 20px 40px;
+    background: #fff;
+  }
+  header h1 {
+    grid-column: span 6;
+    text-align: center;
+  }
+  header nav {
+    grid-column: span 6;
+    justify-self: end;
+    align-self: center;
+  }
+  header nav a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 60 auto;
+    padding: 20px;
+  
+  }
+  
+  main img {
+    grid-column: span 6;
+    width: 100%;
+    border-radius: 6px;
+  }
+  main .welcome {
+    grid-column: 8 /span 5;
+    border-radius: 8px;
+  
+  }
+  
+  main h2 {
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 20px;
+  
+  }
+  
+  main .card {
+    grid-column: span 4;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 960px) {
+    main img {
+      grid-column: 2 / span 10;
+    }
+    main .welcome {
+      grid-column: 3 / span 8;
+      text-align: center;
+    }
+    main .card {
+      grid-column: 3 / span 8;
+    }
+  
+    header nav a {
+      display: none;
+    
+    }
+   }
+    
